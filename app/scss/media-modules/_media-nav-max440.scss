@@ -1,0 +1,42 @@
+//styles for max width 1440px are defined in modules/nav file (nav, nav-link, link-icons)
+//styles for max width 1199px are defined in modules/nav file (nav, nav-link, link-icons)
+
+@media #{$max440} {
+
+  .header {
+
+    .nav {
+
+      .nav-logo-container {
+
+        .nav-logo {
+          width: 150px;
+        }
+      }
+
+      .nav-list {
+
+        .nav-link {
+
+          .nav-link-name {
+
+            .circle-icon {
+              top: 29px;
+              left: 205px;
+            }
+
+            .heart-icon {
+              top: 30px;
+              left: 170px;
+            }
+
+            .heart-icon-number {
+              top: 30px;
+              left: 176px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+//-----SHOP-SECTION-STYLES
+
+.shop {
+
+  .shop-carousel {
+
+    .shop-element {
+      width: 33%;
+      position: relative;
+      outline: 0;
+
+      .shop-element-image {
+        width: 100%;
+      }
+
+      &:hover {
+
+        .hover-div {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  //-----HOVER-DIV - general
+
+  .hover-div {
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 50px;
+    box-sizing: border-box;
+    display: none;
+
+    @media #{$max997} {
+      padding: 0 20px;
+    }
+
+    .hover-element {
+      display: inline-block;
+      width: 50%;
+
+      @media #{$max768} {
+
+        &:first-of-type {
+          width: 65%;
+        }
+
+        &:last-of-type {
+          width: 35%;
+        }
+      }
+
+      &:last-of-type {
+        text-align: right;
+      }
+    }
+  }
+
+  //-----HOVER-DIV - REACT
+
+  .react-hover-div {
+    top: 50px;
+
+    @media #{$max997} {
+      top: 20px;
+    }
+
+    .shop-icon {
+      width: 20px;
+      cursor: pointer;
+    }
+
+    .add-hover {
+      width: 80%;
+
+      .add-icon {
+        float: left;
+        padding-right: 20px;
+      }
+    }
+
+    .like-hover {
+      width: 20%;
+
+      .like-icon {
+        float: right;
+      }
+    }
+  }
+
+  //-----HOVER-DIV - INFO
+
+  .info-hover-div {
+    bottom: 50px;
+
+    @media #{$max997} {
+      bottom: 20px;
+    }
+
+    .price-hover {
+
+      .line-through {
+        text-decoration: line-through;
+        color: $detal-color;
+        padding: 0 5px;
+
+        .earlier-price {
+          color: $link-color;
+        }
+      }
+
+      .change-display {
+        display: none;
+
+        @media #{$max1199} {
+          display: inline-block;
+        }
+
+        @media #{$max576} {
+          display: none;
+        }
+
+        @media #{$max440} {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

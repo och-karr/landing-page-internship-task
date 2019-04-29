@@ -1,0 +1,6 @@
+build/
+node_modules/
+dist/
+.idea
+images/Homepage.png
+app/vendor/

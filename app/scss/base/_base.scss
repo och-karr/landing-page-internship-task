@@ -1,0 +1,57 @@
+* {
+  font-family: $main-font;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+  line-height: 2.2;
+}
+
+.header, .container, .footer {
+  min-width: 300px;
+}
+
+//-----LINK-LINE (under every nav-link)
+
+.link-line {
+  height: 2px;
+  width: 0%;
+  display: block;
+  background-color: $detal-color;
+  transition: all 0.5s;
+}
+
+.container-link-line {
+  @extend .link-line;
+  width: 100%;
+  background-color: $link-color;
+}
+
+@mixin container-link-line-hover-styles() {
+  width: 30%;
+  background-color: $detal-color;
+}
+
+@mixin container-link-line-active-styles() {
+  color: $detal-color;
+}
+
+//-----CONTAINER-STYLES
+
+.container {
+
+  width: 100%;
+
+  .photo {
+    box-shadow: 0px 0px 51px 13px rgba(0,0,0,0.15);
+    width: 100%;
+  }
+}

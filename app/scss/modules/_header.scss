@@ -1,0 +1,28 @@
+//-----HEADER-STYLES
+
+.header {
+  height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+//-----HEADER-LABEL-STYLES
+
+.header-label-container {
+  display: grid;
+  grid-template-columns: 2fr 60% 1fr 1fr;
+  grid-template-rows: 100%;
+  justify-items: center;
+  background-color: $black;
+  color: $white;
+
+  .header-label-text {
+    line-height: 50px;
+    font-size: 15px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,144 @@
+//styles for max width 1440px are defined in modules/nav file (nav, nav-link, link-icons)
+//styles for max width 1199px are defined in modules/nav file (nav, nav-link, link-icons)
+
+@media #{$max997} {
+
+  .header {
+
+    .nav {
+      background-color: $white;
+      padding-bottom: 70px;
+
+      //-----NAV-LOGO-CONTAINER
+
+      .nav-logo-container {
+        padding-top: 0px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid $link-color;
+
+        .nav-logo {
+          width: 200px;
+        }
+      }
+
+      //-----NAV-LIST
+
+      .nav-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 25px;
+        position: relative;
+
+        .nav-logo-container {
+          opacity: 1;
+        }
+
+        .tight-link {
+          width: 50%;
+        }
+
+        .my-account-link {
+          text-align: right;
+        }
+
+        .icon-visible {
+          float: right;
+        }
+
+        //-----NAV-LINK (menu links)
+
+        //visibility of escape icons
+        .icon-visible {
+          display: inline-block;
+          text-align: right;
+        }
+
+        .icon {
+          font-size: 32px;
+          padding-top: 2px;
+          cursor: pointer;
+        }
+
+        .nav-link {
+          padding: 17px 0 10px 0;
+          border-bottom: 1px solid $link-color;
+          visibility: hidden;
+          transition: padding 1s;
+
+          .cursor-default {
+            cursor: default;
+          }
+
+          .nav-link-name {
+            padding-bottom: 0;
+
+            //ICONS next to last links
+
+            .link-icon {
+              //position: absolute;
+              visibility: visible;
+              opacity: 1;
+            }
+
+            .circle-icon {
+              top: 33px;
+              left: 290px;
+            }
+
+            .heart-icon {
+              top: 34px;
+              left: 240px;
+            }
+
+            .heart-icon-number {
+              top: 34px;
+              left: 246px;
+              visibility: visible;
+            }
+          }
+
+          .hide-nav-link-name-for-mobile {
+            position: static;
+            visibility: hidden;
+          }
+
+          //-----SUBLIST (drop down menu)
+
+          .sublist {
+
+            .sublist-link {
+              padding-bottom: 15px;
+
+              &:first-of-type {
+                padding-top: 20px;
+              }
+            }
+          }
+
+          .sublist-mobile-visible {
+            display: inline-block;
+          }
+        }
+
+        .list-mobile-visible {
+          visibility: visible;
+        }
+
+        .hide-nav-link-for-mobile {
+          height: 0;
+          padding: 0;
+          border: none;
+        }
+      }
+
+      .short-nav-list {
+        height: 25px;
+
+        .nav-link {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

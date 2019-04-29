@@ -1,0 +1,62 @@
+//styles for max width 1440px are defined in modules/nav file (nav, nav-link, link-icons)
+//styles for max width 1199px are defined in modules/nav file (nav, nav-link, link-icons)
+
+@media #{$min998} {
+
+  .header {
+
+    .nav {
+
+      //-----NAV-LIST
+
+      .nav-list {
+        grid-template-columns: 3.3fr 1.2fr 1.1fr 0.9fr 0.9fr 0.9fr 1.2fr .8fr 1fr;
+
+        .border-element {
+          display: none;
+        }
+
+        .nav-link {
+
+          .nav-link-name {
+
+            &:hover {
+              color: $link-color;
+              cursor: pointer;
+
+              .link-line {
+                width: 100%;
+              }
+            }
+
+            &:active {
+              color: $detal-color;
+            }
+          }
+
+          //-----SUBLIST (drop down menu)
+
+          .sublist {
+            height: 150px;
+          }
+        }
+
+        //visibility of escape icons
+        .icon-visible {
+          display: none;
+        }
+
+        .make-sublist-visible {
+
+          &:hover .sublist {
+            display: block;
+          }
+        }
+      }
+
+      .short-nav-list {
+        height: auto;
+      }
+    }
+  }
+}

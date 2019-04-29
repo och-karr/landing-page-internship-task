@@ -1,0 +1,127 @@
+//-----NAV-STYLES
+.header {
+
+  .nav {
+    background-color: $main-bcg-color;
+    font-size: 16px;
+    padding: 0px 40px;
+
+    @media #{$max1199} {
+      padding: 0px 20px;
+    }
+
+    //-----NAV-LOGO-CONTAINER
+
+    .nav-logo-container {
+      width: 100%;
+      padding-top: 35px;
+    }
+
+    //-----NAV-LIST
+
+    .nav-list {
+
+      @media #{$min998} {
+        display: grid;
+        grid-template-columns: 3fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100%;
+        justify-items: center;
+      }
+
+      @media #{$max1440} {
+        grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 1.2fr 0.8fr 1fr;
+      }
+
+      @media #{$max1199} {
+        grid-template-columns: 3.3fr 0.7fr 1fr 1fr 1fr 1fr 1.2fr 0.8fr 1fr;
+      }
+
+      //-----NAV-LINK (menu links)
+
+      .nav-link {
+        width: 100%;
+        padding-top: 50px;
+
+        .nav-link-name {
+          padding-bottom: 40px;
+          display: inline-block;
+          position: relative;
+
+          //ICONS next to last links
+
+          .link-icon {
+            position: absolute;
+            right: -50px;
+            width: 20px;
+
+            @media #{$max1440} {
+              right: -35px;
+            }
+
+            @media #{$max1199} {
+              right: -25px;
+            }
+
+            @media #{$max997} {
+              right: auto;
+            }
+          }
+
+          .circle-icon {
+            width: 22px;
+            height: 22px;
+            top: 4px;
+            padding: 1px;
+            box-sizing: border-box;
+            color: $white;
+            background-color: $black;
+            border-radius: 50%;
+            font-size: 11px;
+            text-align: center;
+          }
+
+          .heart-icon {
+            width: 25px;
+            top: 2px;
+          }
+
+          .heart-icon-number {
+            position: absolute;
+            top: 2px;
+            right: -44px;
+            font-size: 11px;
+            color: $white;
+
+            @media #{$max1440} {
+              right: -28px;
+            }
+
+            @media #{$max1199} {
+              right: -19px;
+            }
+
+            @media #{$max997} {
+              right: auto;
+            }
+          }
+        }
+
+        //-----SUBLIST (drop down menu)
+
+        .sublist {
+          display: none;
+          width: 300%;
+
+          .sublist-link {
+            padding-bottom: 15px;
+
+            &:hover {
+              color: $detal-color;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

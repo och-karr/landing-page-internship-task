@@ -1,0 +1,57 @@
+//styles for max width 1440px are defined in modules/nav file (nav, nav-link, link-icons)
+//styles for max width 1199px are defined in modules/nav file (nav, nav-link, link-icons)
+
+@media #{$max997} {
+
+  .header {
+
+    .header-label-container {
+      grid-template-columns: 50% 1fr 1fr;
+      padding: 0 20px;
+
+      .header-label-text {
+        font-size: 14px;
+        width: 100%;
+
+        &:first-of-type {
+          text-align: left;
+        }
+
+        &:last-of-type {
+          text-align: right;
+        }
+      }
+
+      .non-visible {
+        display: none;
+      }
+    }
+  }
+}
+
+@media #{$max440} {
+
+  .header {
+    //-----HEADER-LABEL-STYLES
+
+    .header-label-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .header-label-text {
+        font-size: 14px;
+        display: inline-block;
+        width: 50%;
+        height: 30px;
+        line-height: 30px;
+        box-sizing: border-box;
+
+        &:nth-of-type(2) {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

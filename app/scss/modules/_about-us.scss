@@ -1,0 +1,89 @@
+//-----ABOUT-US-SECTION-STYLES
+
+.about-us {
+  background-color: $main-bcg-color;
+  padding: $main-padding;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media #{$max1199} {
+    padding: 50px;
+  }
+
+  .about-us-column {
+    width: 50%;
+
+    @media #{$max576} {
+      width: 100%;
+    }
+  }
+
+  //-----PHOTO
+
+  .about-us-photo-container {
+
+    .about-us-photo {
+      width: 75%;
+
+      @media #{$max768} {
+        width: 90%;
+      }
+
+      @media #{$max576} {
+        width: 100%;
+      }
+    }
+  }
+
+  //-----TEXT
+
+  .about-us-text {
+    align-self: flex-end;
+
+    @media #{$max576} {
+      padding-top: 20px;
+    }
+
+    .about-us-title {
+
+      @media #{$max768} {
+        font-size: 28px;
+      }
+
+      @media #{$max440} {
+        font-size: 20px;
+      }
+    }
+
+    .about-us-sub-title {
+      padding-bottom: 100px;
+
+      @media #{$max768} {
+        font-size: 24px;
+      }
+
+      @media #{$max576} {
+        padding-bottom: 20px;
+      }
+
+      @media #{$max440} {
+        font-size: 16px;
+      }
+    }
+
+    .about-us-link {
+      display: inline-block;
+
+      &:hover {
+
+        .container-link-line {
+          @include container-link-line-hover-styles();
+        }
+      }
+
+      &:active {
+        @include container-link-line-active-styles();
+      }
+    }
+  }
+}
